@@ -1,0 +1,37 @@
+CHEATSHEET GIT/GITHUB
+
+(COMANDOS GENERALES)
+git init: Funciona para iniciar un repositorio 
+git commit -m: Agrega un mensaje 
+git log: Historial en cambio de los proyectos
+git remote add origin: Vincula el repositorio local con el repositorio remoto 
+git remote -v: Comprueba los movimientos de la vinculación 
+git push origin main: Petición para enviar los archivos del repositorio local al remoto
+git clone: Crea una copia remota de los archivos existentes
+git pull origin main: Actualizará los archivos modificados desde el repositorio remoto al local 
+git restore: Restaura los archivos desde la página donde te encuentres
+git log --oneline: ver commits creados
+git diff log --oneline: Comparar dos commits
+
+COMANDOS PARA CREAR 
+mkdir: Crea una carpeta o directorio 
+touch: Crea un archivo
+
+MOSTRAR
+ls: lista archivos en el directorio o carpeta
+ls -a: Lista todos los archivos, incluyendo los archivos ocultos
+ls -l: Muestra toda la información de una carpeta: usuario, grupo, permisos, tamaño, fecha y hora de creación.
+ls -R: Muestra las carpetas y los archivos contenidos en ellos de manera recursiva
+pwd: Muestra la carpeta en la que se está trabajando actualmente
+
+ELIMINAR
+rm: Elimina un archivo 
+rmdir: Elimina una carpeta vacía
+rm -r: Elimina una carpeta y su contenido
+
+COPIAR/MOVER/RENOMBRAR 
+mv [ruta/archivo1] [ruta/archivo2]: Renombra archivos (archivo2 no debe existir o será sobreescrito)
+mv [ruta/carpeta1] [ruta/carpeta2]: Renombra la carpeta1 como carpeta2 (carpeta 2 no debe existir)
+mv [ruta/carpeta1] [ruta/carpeta2]: Mueve contenido de carpeta1 a carpeta2 (carpeta 2 debe existir)
+cp [ruta/archivo1] [ruta/archivo2]: Copia un archivo o carpeta
+opción: -r: Indica que copie recursivamente el contenido de las subcarpeta
