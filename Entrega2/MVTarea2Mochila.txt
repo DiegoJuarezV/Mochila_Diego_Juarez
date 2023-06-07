@@ -1,0 +1,33 @@
+1. ¿Qué es un usuario root en Linux?
+R= El usuario root es el superusuario o administrador del sistema. El nombre "root" proviene del sistema de archivos de Unix/Linux, donde el directorio raíz se representa con el símbolo "/". El usuario root tiene control total sobre el sistema operativo y sus recursos. Se recomienda que los usuarios regulares utilicen cuentas de usuario normales en lugar de la cuenta root en su uso diario, y solo se debe utilizar el usuario root cuando sea necesario para realizar tareas de administración del sistema. Esto ayuda a prevenir errores accidentales o malintencionados que podrían dañar el sistema.
+
+2. ¿Por qué ubuntu no me deja establecer la contraseña durante la instalación?
+R= El proceso de instalación puede utilizar una interfaz simplificada que no solicita la contraseña del usuario root durante la instalación. En su lugar, se crea automáticamente una cuenta de usuario regular con privilegios de administrador y se permite establecer una contraseña para esa cuenta.
+Cuando se pide una contraseña al instalar cosas, etc., es tu propia contraseña la que debes usar. De esta manera, es posible permitir a otros hacer tareas administrativas sin tener que compartir contraseñas y claves. También es configurable para permitir que alguien ejecute un comando específico como root, pero no otros, pero normalmente no tocarás eso. El primer usuario creado es por defecto la cuenta de administrador.
+
+3. ¿Cuáles son los procesos típicos de Linux?
+R= 
+Init: El proceso init es el primer proceso que se ejecuta cuando el sistema se inicia. Es responsable de iniciar y detener otros procesos y servicios durante el arranque y apagado del sistema.
+
+Systemd: Systemd es un sistema de inicio y administración de servicios que se utiliza en muchas distribuciones de Linux. Es responsable de controlar los procesos y servicios del sistema y gestionar su arranque, detención, reinicio y supervisión.
+
+Kernel: El kernel de Linux es el corazón del sistema operativo. Es el proceso principal que gestiona todos los recursos del sistema, como la memoria, los dispositivos de entrada y salida, y proporciona una interfaz entre el hardware y el software.
+
+Shell: En un sistema Linux, se ejecutan varios procesos de shell en segundo plano. El shell es una interfaz de línea de comandos que permite a los usuarios interactuar con el sistema operativo. Hay diferentes shells disponibles, como Bash (Bourne Again Shell), Zsh (Z Shell) y Fish (Friendly Interactive Shell).
+
+Servidores y demonios: Linux es ampliamente utilizado como servidor, por lo que es común tener varios procesos de servidor y demonios en ejecución. Estos procesos gestionan servicios como HTTP (Apache, Nginx), correo electrónico (Postfix, Exim), bases de datos (MySQL, PostgreSQL) y más.
+
+Procesos de usuario: Estos son los procesos que se ejecutan en el contexto de los usuarios del sistema. Cada vez que un usuario inicia una aplicación o un programa, se crea un nuevo proceso de usuario para ejecutarlo. Estos procesos pueden ser tareas en segundo plano o aplicaciones interactivas que se ejecutan en una terminal o en un entorno gráfico.
+
+4. Cómo identificar esos procesos?
+R= Aquí algunos de ellos:
+ps: El comando "ps" muestra información sobre los procesos en ejecución en el sistema. Algunas opciones útiles incluyen "ps aux" para mostrar todos los procesos de todos los usuarios, "ps -ef" para una salida más detallada y "ps -e --forest" para mostrar los procesos en forma de árbol jerárquico.
+
+top: El comando "top" muestra una lista en tiempo real de los procesos que están utilizando más recursos del sistema, como CPU y memoria. También muestra información sobre la carga del sistema y otros datos útiles. Puedes ordenar la lista por diferentes columnas y ver la utilización de recursos actualizada periódicamente.
+
+htop: Similar a "top", "htop" es una herramienta más avanzada y visualmente mejorada para monitorear los procesos y el rendimiento del sistema. Proporciona una interfaz interactiva que permite realizar acciones como matar procesos o cambiar la prioridad.
+
+pstree: El comando "pstree" muestra una representación en forma de árbol de los procesos en ejecución y sus relaciones jerárquicas. Puedes utilizarlo para obtener una visión general de la estructura de los procesos en el sistema.
+
+5. Contraseña para usuario root
+R=  La contraseña del usuario root es algo que debe establecerse durante la instalación del sistema operativo o mediante la administración del sistema por parte del administrador o propietario del sistema. Es importante tener en cuenta que el usuario root tiene privilegios y permisos completos en el sistema, por lo que se recomienda utilizarlo con precaución y solo cuando sea absolutamente necesario.
