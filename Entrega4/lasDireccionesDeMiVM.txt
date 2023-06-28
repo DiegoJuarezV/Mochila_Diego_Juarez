@@ -1,0 +1,6 @@
+IP privada MV: 172.17.0.1
+IP publica MV: 135.148.34.20
+MAC: 02:42:2d:60:e3:54
+
+Es diferente la IP publica y privada de una maquina host?
+Si, la diferencia principal de una IP publica y una privada radica en su accesibilidad y visibilidad desde internet. La direccion IP publica permite que el dispositivo sea accesible desde cualquier parte de internet, mientras que la privada solo es visible y accesible dentro de la red local.
